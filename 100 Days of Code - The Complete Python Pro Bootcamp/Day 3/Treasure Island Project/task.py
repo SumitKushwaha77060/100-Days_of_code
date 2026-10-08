@@ -22,3 +22,29 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
+choice1 = input("You\'re at a crossroad, where do you want to go ? Type 'left' or 'right'.").lower()
+if choice1 == "left":
+    
+    choice2 = input("Type 'wait' or 'swim': ").lower()
+
+    if choice2 == "wait":
+
+        choice3 = input("Which colour? ").lower()
+
+        if choice3 == "red":
+            print("It's a room full of fire. Game Over.")
+
+        elif choice3 == "yellow":
+            print("You found the treasure. You Win!")
+
+        elif choice3 == "blue":
+            print("You enter a room of beasts. Game Over.")
+
+        else:
+            print("You chose a door that doesn't exist. Game Over.")
+
+    else:
+        print("You got attacked by an angry trout. Game Over.")
+
+else:
+    print("You fell into a hole. Game Over.")
